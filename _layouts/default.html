@@ -1,31 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    {% include head.html %}
-    {% include scripts/mathjax.html %}
-  </head>
+<head>
+  {% include head.html %}
+  {% include scripts/mathjax.html %}
+</head>
 
-  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+<body
+  class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-    <!-- Header -->
+  <!-- Header -->
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <!-- Content -->
+  <!-- Content -->
 
-    <div class="container mt-5">
-      {{ content }}
-    </div>
+  <div class="container mt-5">
+    {{ content }}
+  </div>
 
-    <!-- Footer -->
+  <!-- Footer -->
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
 
-  {% include scripts/bootstrap.html %}
-  {% include scripts/mansory.html %}
-  {% include scripts/misc.html %}
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/{{ site.fontawesome.version }}/css/all.min.css"
+    integrity="{{ site.fontawesome.integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/academicons/{{ site.academicons.version }}/css/academicons.min.css"
+    integrity="{{ site.academicons.integrity }}" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet"
+  href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/{{ site.highlight_theme }}.css" />
+
+
+
+<!-- JQuery -->
+{% include scripts/jquery.html %}
+
+<!-- Theming-->
+{% if site.enable_darkmode %}
+<script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
+{% endif %}
+
+{% if site.enable_google_analytics %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+
+{% if site.enable_panelbear_analytics %}
+<!-- Panelbear Analytics - We respect your privacy -->
+<script async src="https://cdn.panelbear.com/analytics.js?site={{site.panelbear_analytics}}"></script>
+<script>
+  window.panelbear = window.panelbear || function () { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
+  panelbear('config', { site: '{{site.panelbear_analytics}}' });
+</script>
+{% endif %}
+
+{% include scripts/bootstrap.html %}
+{% include scripts/mansory.html %}
+{% include scripts/misc.html %}
 
 </html>

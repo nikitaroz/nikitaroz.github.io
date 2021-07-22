@@ -375,7 +375,9 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      .row {
+        margin-bottom: 0.5rem;
+      }
       .abbr {
         height: 2rem;
         margin-bottom: 0.5rem;
@@ -413,6 +415,7 @@ footer.sticky-bottom {
         }
       }
       .links {
+        margin-bottom: 0rem;
         a.btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
@@ -427,6 +430,7 @@ footer.sticky-bottom {
         }
       }
       .hidden {
+        margin-bottom: 0rem;
         font-size: 0.875rem;
         max-height: 0px;
         overflow: hidden;
@@ -445,6 +449,7 @@ footer.sticky-bottom {
           font-size: 1em;
           line-height: 1.4em;
           padding: 10px;
+          white-space: pre-wrap;
         }
       }
       .hidden.open {
