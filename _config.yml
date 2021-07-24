@@ -14,7 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 icon: 🔥 # the emoji used as the favicon
-url:  https://nikitaroz.github.io # the base hostname & protocol for your site
+url:   # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -86,7 +86,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /news/:path/
   projects:
     output: true
@@ -144,7 +144,7 @@ github: [metadata]
 scholar:
 
   last_name: Rozanov
-  first_name: [Nikita, D.]
+  first_name: Nikita D.
 
   style: apa
   locale: en
@@ -161,6 +161,8 @@ scholar:
   details_link: Details
 
   query: "@*"
+
+
 
 # -----------------------------------------------------------------------------
 # Optional Features
