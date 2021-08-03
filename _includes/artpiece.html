@@ -1,0 +1,12 @@
+<div class="grid-item">
+    <div class="card hoverable">
+      {% if artpiece.img %}
+      <img src="{{ artpiece.img | relative_url }}" alt="project thumbnail">
+      {% endif %}
+      {% if artpiece.title %}
+      <span class="card-title">
+        <p>{{ artpiece.title }}</p>
+      </span>
+      {% endif %}
+    </div>
+</div>

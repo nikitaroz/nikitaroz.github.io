@@ -6,5 +6,5 @@ img:
 importance: 5
 ---
 
-# 🛠️
-## Coming Soon
+# 🛠️ Coming Soon
+Check out the <a href="{{ '/assets/pdf/Senior-Design.pdf' | absolute_url }}">Senior Design</a> writeup.

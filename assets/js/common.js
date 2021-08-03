@@ -7,3 +7,10 @@ $(document).ready(function() {
     });
     $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
 });
+
+$(document).ready(function() {
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    isFitWidth: true
+  });
+});

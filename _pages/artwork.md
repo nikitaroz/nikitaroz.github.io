@@ -2,8 +2,28 @@
 layout: page
 permalink: /artwork/
 title: artwork
-description: Check out some of my artwork! 
+description: Check out some of my artwork!
+horizontal: false
 nav: true
 ---
 
-Art will go here.
+<div class="artwork">
+    {% assign sorted_artwork = site.artwork | sort: "importance" %}
+    <!-- Generate cards for each piece -->
+    {% if page.horizontal %}
+      <div class="container">
+        <div class="row row-cols-2">
+        {% for artpiece in sorted_artwork %}
+          {% include projects_horizontal.html %}
+        {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <div class="grid">
+        {% for artpiece in sorted_artwork %}
+          {% include artpiece.html %}
+        {% endfor %}
+      </div>
+    {% endif %}
+</div>
+

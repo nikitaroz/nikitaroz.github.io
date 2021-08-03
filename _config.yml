@@ -98,6 +98,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  artwork:
+    output: true
+    permalink: /artwork/:path/
 
 news_limit: 5
 
