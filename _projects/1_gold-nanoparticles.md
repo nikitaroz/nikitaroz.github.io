@@ -12,7 +12,7 @@ Gold nanoparticles (AuNPs) are increasingly used as transporters of novel medici
 # MPA nanoparticles
 3-mercaptopropionic acid (MPA) is a small, highly-charged molecule, and it was the first type of coating that I studied. I wanted to find a way determine which sites on cytochrome c will bind to the nanoparticle. To set up this study, I modeled the protein as having six faces (like the sides of a dice), and I created six simulations with each of the different faces was oriented towards the nanoparticle.
 
-**IMAGE GOES HERE** 
+
 The protein was placed at a short distance away from the AuNP to allow for it to optimize its orientation for the best binding, but is not too far away that it does not bind to the AuNP. Once the protein binds to the surface coating, the simulation continues, allowing the protein to position itself into a more favorable configuration if one exists. 
 For a sense of scale, each of these simulations had over 100 thousand atoms, and was run for a 50 nanosecond duration (equivalent to 25 million individual timesteps). 
 

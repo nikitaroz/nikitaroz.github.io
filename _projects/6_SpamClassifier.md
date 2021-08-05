@@ -2,7 +2,7 @@
 layout: page
 title: SpamClassifer
 description: A website to visualize why emails are spam.
-img: 
+img: /assets/img/spam-wordcloud.svg
 github: https://github.com/nikitaroz/SpamClassifier
 importance: 6
 ---

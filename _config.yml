@@ -10,10 +10,9 @@ email: nikitaroz@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Nikita Rozanov.
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-icon: 🔥 # the emoji used as the favicon
+
+icon:  # the emoji used as the favicon
 url:   # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
@@ -51,7 +50,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: nikitaroz # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: nikita-rozanov-6a3313116 # your LinkedIn user name
+linkedin_username: nikita-rozanov # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -65,7 +64,7 @@ wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email works best.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
