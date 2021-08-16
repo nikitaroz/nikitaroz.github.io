@@ -1,4 +1,5 @@
 {
   "editor.tabSize": 2,
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "python.pythonPath": "/Users/nikita/miniconda3/bin/python"
 }

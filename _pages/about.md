@@ -6,7 +6,7 @@ description: Manufacturing Technician at Intel Corporation
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
 
 
 news: false  # includes a list of news items

@@ -11,5 +11,6 @@ nav: true
 <h1>Peer-Reviewed Publications</h1>
 {% bibliography -f papers %}
 <h1>Senior Project/Thesis</h1>
-<h1>Presentations</h1>
+{% bibliography -f thesis %}
+<!-- <h1>Presentations</h1> -->
 </div>

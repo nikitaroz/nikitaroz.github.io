@@ -6,18 +6,14 @@ img: /assets/img/HBDI.png
 importance: 2
 ---
 
-# Introduction
-
 At the Fang Lab at Oregon State University, I delved into how these fluorescent proteins behave, and how we could make alterations that would improve them. 
 
-# HBDI
-
 ## Introduction
-One of my first major projects was to characterize a molecule called HBDI, which is a model chromohore for GFP. This molecule is essentially the fluorescent part of GFP. When this molecule is not inside the protein, it is not fluorescent because it is missing the protein environment, and instead proceeds through a different reaction pathway. We studied why this molecule does not behave the same in solution, and what alternative pathways it takes when exposed to light using a technique called femtosecond-stimulated Raman spectroscopy. This technique can the reveal ultrafast molecular motions at the moment a molecule is struck with a photon. One of the challenges with this technique is processing the large amount of data to the point when it can be interpreted, which was the focus in the project.
+HBDI is small modlecule that is the model chromohore for GFP. This molecule is essentially the fluorescent part of GFP. When this molecule is not inside the protein, it is not fluorescent because it is missing the protein environment, and instead proceeds through a different reaction pathway. We studied why this molecule does not behave the same in solution, and what alternative pathways it takes when exposed to light using a technique called femtosecond-stimulated Raman spectroscopy. This technique can the reveal ultrafast molecular motions at the moment a molecule is struck with a photon. One of the challenges with this technique is processing the large amount of data to the point when it can be interpreted, which was the focus in the project.
 
 ## Frequency Analysis 
 A typical processed FSRS spectrum looks like this.
-<img class="img-responsive mx-auto d-block" src="{{ '/assets/img/HBDI-stackplot.svg' | absolute_url }}" alt="HBDI FSRS plot" data-zoomable>
+<img class="img-responsive dimmed-img mx-auto d-block" style="width: 90%;" src="{{ '/assets/img/HBDI-combined-stackplots.svg' | absolute_url }}" alt="HBDI FSRS plot" data-zoomable>
 
 The techique captures the Raman spectrum at several time deltas from the start of the photoexcitation process, allowing us to see how the reaction proceeds. In this spectrum, there are also oscillations modulating the spectrum, finding and characterizing them was my major focus in the project. These oscillations are interesting because they provide valuable information about how low-frequency vibrational modes interact with other modes, which we will see are important to understanding how the reaction happens. These can only be seen after removing the exponential time decay components from the spectrum.
 
@@ -39,3 +35,6 @@ As you can see, the wavelet transform shows that the 226 <sup>-1</sup> mode that
 ## Conclusion
 In conclusion, 2D-FSRS and wavelet transform techniques provided important evidence that revealed an important oscillation that corresponded to an important twisting motion. Subsequent wavelet transform of the data revealed that this mode appears after a 0.5 ps delay from the beginning of the reaction, which supported the hypothesis that the molecule proceeded through an intermediate state. The technique that I developed in this study can be applied to study other systems. Check out the **link goes here*** project page for more details about the pipeline and an interactive web application.
 
+<div class="center-block text-center">
+  <a class="btn btn-sm" role="button" href="{{ '/assets/pdf/Physcon-HBDI.pdf' | absolute_url }}">HBDI Poster</a>
+</div>
