@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project_page
 title: OscillationsApp
 description: A workflow to uncover oscillations in time-resolved spectroscopy data.
 img: /assets/img/OscillationsApp.svg

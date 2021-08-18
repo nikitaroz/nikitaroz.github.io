@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project_page
 title: Gold Nanoparticles and Cytochrome *c*
 description: My research at Johns Hopkins University centered around understanding how the cytochrome *c* protein interacts with gold nanoparticles.
 img: /assets/img/MPA-nanoparticle.png
@@ -23,6 +23,8 @@ From this figure, it is clear that lysine residues (labeled K in the figure) int
 
 # EG6 nanoparticles
 etylene-glycol 6 (EG6) is a much larger, non-polar, molecule than MPA, which presented a unique set of challenges when compared to MPA. The EG6 coating is more uneven and has variable thickness, which made it more challenging to quantify its interaction with the protein. For example, we could no longer use distance to the nanoparticle as an accurate measure of interaction because the variable thickness of the coating. 
+
+<img class="img-responsive mx-auto d-block" style="width: 90%;" src="{{ '/assets/img/EG6-nanoparticle-preparation.png' | absolute_url }}" alt="EG6 nanoparticle preparation">
 
 To overcome this challenge, I redefined how the interaction distance to be the distance between a site on the protein and the nearest atom that was part of the surface coating. Additionally, how could we know how much of the protein surface was exposed to the nanoparticle (ie. coverage)? To determine this, I modeled the protein as a rigid body with three principal axes. There is a line between the protein's center of mass and the nanoparticle's center, and this line makes a distinct angle with respect to the principal axes. Tracking this angle throughout all simulations allowed us to quantify the protein's coverage. 
 

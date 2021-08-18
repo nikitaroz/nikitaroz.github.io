@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project_page
 title: SpamClassifer
 description: A website to visualize why emails are spam.
 img: /assets/img/spam-wordcloud.svg

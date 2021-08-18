@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: project_page
 title: HBDI Molecule Dynamics
 description: I used with spectroscopy data to understand how fluorescent molecules move on the femtosecond timescale. 
 img: /assets/img/HBDI.png

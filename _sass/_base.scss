@@ -8,6 +8,13 @@ p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
 }
 
+// justify paragraphs to make them look nicer
+.justify-text {
+  p {
+    text-align: justify;
+  }
+}
+
 dimmed-img {
   background-color: var(--global-dimmed-img-background-color);
 }
