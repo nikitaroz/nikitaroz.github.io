@@ -1,6 +1,6 @@
 ---
 title: Death Valley
 img: /assets/artwork/death-valley.jpg
-medium: photography (edited)
+medium: digital photography
 importance: 9
 ---

@@ -7,6 +7,6 @@ github: https://github.com/nikitaroz/OscillationsApp
 importance: 3
 ---
 
-# 🛠️ Coming Soon
-
 Check out [OscillationsApp](https://nikitaroz.shinyapps.io/OscillationsApp/) website.
+<img class="img-responsive mx-auto d-block" style="width: 90%;" src="{{ '/assets/img/OscillationsApp-preview.png' | absolute_url }}" alt="OscillationsApp preview">
+

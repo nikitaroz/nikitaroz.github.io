@@ -1,6 +1,6 @@
 ---
 title: Firework
 img: /assets/artwork/firework.jpg
-medium: clay, wire, copper wire
+medium: clay and wire
 importance: 5
 ---

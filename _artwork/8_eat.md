@@ -1,6 +1,6 @@
 ---
 title: Eat
 img: /assets/artwork/eat.jpg
-medium: idk
+medium: scratchboard
 importance: 8
 ---

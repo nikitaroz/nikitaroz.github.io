@@ -1,6 +1,6 @@
 ---
 title: Vortex
 img: /assets/artwork/vortex.jpg
-medium: photography
+medium: digital photography
 importance: 7
 ---
