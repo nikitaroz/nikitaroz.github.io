@@ -2,7 +2,7 @@
 layout: page
 permalink: /artwork/
 title: artwork
-description: Check out some of my artwork!
+description:
 horizontal: false
 nav: true
 ---
@@ -26,4 +26,3 @@ nav: true
       </div>
     {% endif %}
 </div>
-
