@@ -30,7 +30,7 @@ The [SpamClassifier](http://www.myspamclassifier.com) website contains a searcha
 # Results
 The classifier has a 98.9% accuracy when tested on 20% of the dataset (only 80% of the dataset was used during training). When using 5-fold cross-validation on the training set, the classifier had an out-of-fold average accuracy of 98.1%. This is a significant improvement over 74% accuracy achieved for a classifier that naively categorizes all emails as normal. Below is a wordcloud of some of some of the most significant words in the classifier.
 
-<img class="img-responsive mx-auto d-block" src="{{ '/assets/img/spam-wordcloud.svg' | absolute_url }}" alt="SpamClassifier word cloud">
+<img class="img-responsive mx-auto d-block" style="width: 80%;" src="{{ '/assets/img/spam-wordcloud.svg' | absolute_url }}" alt="SpamClassifier word cloud">
 
 The words that are red are more likely to be associated with spam emails, while green words indicate that an email is normal. The size of the word corresponds to how frequently it appears within emails from the dataset. 
 
