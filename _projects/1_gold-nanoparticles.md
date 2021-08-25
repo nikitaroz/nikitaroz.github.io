@@ -2,7 +2,7 @@
 layout: project_page
 title: Gold Nanoparticles and Cytochrome *c*
 simple_title: Gold Nanoparticles and Cytochrome c
-description: My research at Johns Hopkins University centered around understanding cytochrome *c* interacts with gold nanoparticles.
+description: My research at Johns Hopkins University centered around understanding how cytochrome *c* interacts with gold nanoparticles.
 img: /assets/img/MPA-nanoparticle.png
 importance: 1
 ---
