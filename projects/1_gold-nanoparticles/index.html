@@ -12,7 +12,7 @@
   Nikita  Rozanov
 
 
-  | 
+  | Gold Nanoparticles and Cytochrome c
 
 </title>
 <meta name="description" content="Personal website of Nikita Rozanov.
@@ -104,8 +104,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/artwork/">
                 artwork
@@ -160,21 +158,51 @@
   <div class="container mt-5">
     <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title"><p>Gold Nanoparticles and Cytochrome <em>c</em></p>
+</h1>
+    <p class="post-description"><p>My research at Johns Hopkins University centered around understanding how cytochrome <em>c</em> interacts with gold nanoparticles.</p>
+</p>
+  </header>
 
+  <article class="justify-text">
+    <h1 id="introduction">Introduction</h1>
+<p>Gold nanoparticles (AuNPs) are increasingly finding applications in medicine as transporters of drug molecules. During my time at the Hernandez group at Johns Hopkins University, I researched how AuNPs interact with cytochrome <em>c</em> using molecular dynamics (MD) simulations. MD simulations use Newtonian mechanics to simulate molecular systems, and they are especially useful for larger systems such as proteins where quantum mechanical calculations would be computationally intractable. These simulations helped uncover how AuNPs with different surface coatings interact with cytochrome <em>c</em>, an important biological protein. This research was conducted as part of the Center for Sustainable Nanotechnology with the goal of designing safer nanoparticles.</p>
 
-  <ul class="post-list">
-    
-  </ul>
+<h1 id="mpa-nanoparticles">MPA nanoparticles</h1>
+<p>The first nanoparticle coating that I studied was 3-mercaptopropionic acid (MPA): a small, highly-charged molecule. I wanted to determine which sites on cytochrome <em>c</em> will bind to the nanoparticle. To achieve this goal, I modeled the protein as having six faces (like the sides of a dice), and I created six simulations where each of the different faces was oriented towards the nanoparticle, arranged like so. 
+<img class="img-responsive mx-auto d-block" style="width: 80%;" src="/assets/img/MPA-nanoparticle.png" alt="MPA configurations" />
+The protein was placed at a short distance away from the AuNP to allow for it to optimize its orientation for the best binding, but is not too far away that it does not bind to the AuNP. Once the protein binds to the surface coating, the simulation continues, allowing the protein to position itself into a more favorable configuration. Each of these simulations had over 100 thousand atoms, and proceeded for a 50 nanosecond duration, the equivalent of 25 million individual timesteps.</p>
 
-  
+<p>Once these simulations completed, I analyzed how the nanoparticle interacted with the protein. One simple measure of protein-to-nanoparticle affinity is the distance between the (center of) the nanoparticle and the protein surface. This approach works because the nanoparticle is spherical, so this distance measures how close the protein surface is to the nanoparticle. Additionally, I tracked the number of hydrogen bonds during the simulation, which is another measure of affinity. The figure below illustrates which residues on the protein had the greatest affinity based on these measurements.</p>
 
+<p><img class="img-responsive mx-auto d-block" style="width: 90%;" src="/assets/img/MPA-affinity.svg" alt="MPA affinity graph" /></p>
 
+<p>Two protein sites, known as A and L, interacted strongly with the nanoparticle’s MPA coating. Another way to visualize the same data is to show the individual amino acids that interact most strongly with the AuNP. These residues are shown below.</p>
+
+<p><img class="img-responsive mx-auto d-block" style="width: 90%;" src="/assets/img/MPA-affinity-detail.svg" alt="MPA affinity residue graph" /></p>
+
+<p>The figure shows that the lysine residues (labeled K) interact strongly with the MPA, another important finding. And, as one would expect, the A and L sites contained lysines.</p>
+
+<h1 id="eg6-nanoparticles">EG6 nanoparticles</h1>
+<p>Hexa(ethylene glycol) (EG6) is a non-polar and much larger molecule than MPA, which presented a unique set of challenges when compared to MPA. Namely, the size of EG6 makes it more challenging to construct the nanoparticle. The figure below summarizes how I prepared the nanoparticle: the EG6 molecules attached themselves to the gold core during a 4 nanosecond simulation.</p>
+
+<p><img class="img-responsive mx-auto d-block" style="width: 90%;" src="/assets/img/EG6-nanoparticle-preparation.png" alt="EG6 nanoparticle preparation" /></p>
+
+<p>After completing similar simulations as with MPA, I found that the interaction between cytochrome <em>c</em> and the EG6-coated AuNP was limited. This suggests that non-polar molecules have less affinity towards cytochrome <em>c</em>. Additionally, I developed a method to determine how well the simulations covered the surface of the protein (more about that in the EG6 poster linked below).</p>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>My research on AuNPs showed how surface coatings affect their interaction with cytochrome <em>c</em>. My research found that the small, highly-charged MPA molecule interacts strongly with the lysines on the surface of cytochrome <em>c</em>, making the A and L sites likely binding candidates. In contrast, the non-polar EG6 coating did not significantly interact with cytochrome <em>c</em>. This has major implications into how nanoparticle coatings can be designed to prevent unintended proteins from binding, potentially leading to safer surface coating formulations.</p>
+
+<p>These posters go into more depth about the project.</p>
+<div class="center-block text-center">
+  <a class="btn btn-sm" role="button" href="/assets/pdf/JHU-MPA-coated-NPs.pdf">MPA Poster</a>
+  <a class="btn btn-sm" role="button" href="/assets/pdf/JHU-EG6-coated-NPs.pdf">EG6 Poster</a>
 </div>
 
+  </article>
+
+</div>
   </div>
 
   <!-- Footer -->

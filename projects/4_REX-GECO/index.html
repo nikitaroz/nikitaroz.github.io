@@ -104,8 +104,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/artwork/">
                 artwork
@@ -160,21 +158,46 @@
   <div class="container mt-5">
     <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title"><p>REX-GECO Structure</p>
+</h1>
+    <p class="post-description"><p>Simulations and homology modeling to determine REX-GECO protein structure.</p>
+</p>
+  </header>
 
+  <article class="justify-text">
+    <h1 id="introduction">Introduction</h1>
+<p>REX-GECO is a fluorescent calcium biosensor protein developed in 2014. A protein that glows red in the presence of calcium, it is distinctive for how drastically its fluorescence color changes when it binds to calcium. This large color difference is beneficial for bioimaging because it reduces the color interference between the calcium bound and calcium free protein forms. Therefore, it is useful to understand what structural features contribute to this color property so that future fluorescent proteins can be designed with these features in mind. In this project, I estimated and analyzed the structure of this protein using homology modeling and molecular dynamics (MD) simulations.</p>
 
-  <ul class="post-list">
-    
-  </ul>
+<h1 id="homology-modeling">Homology Modeling</h1>
+<p>The REX-GECO protein consists of three components: a fluorescent protein region, a Calmodulin (CaM) calcium binding region, and a myosin light chain kinase (M13) fragment that interacts with CaM during calcium binding. The figure below illustrates the different protein regions, and how they change conformation when calcium binds to CaM.</p>
 
-  
+<p><img class="img-responsive mx-auto d-block" style="width: 90%;" src="/assets/img/REX-GECO-proteins.png" alt="REX-GECO calcium binding diagram" /></p>
 
+<p>When calcium ions bind to CaM, its structure changes drastically, and this change also impacts the adjacent fluorescent protein region, causing its photochemistry to change. To determine what these structural differences are, I created 5 structural predictions for the protein with and without calcium. REX-GECO does not have a structure that has been determined from experiments. Instead, I relied on homology modeling with the <code class="language-plaintext highlighter-rouge">MODELLER</code> software to generate structural predictions. Homology modeling is a method for generating predictions for unknown protein structures using structures from known structures. This software takes one or more protein structures along with their amino acid sequences and uses this information to predict the structure of a target protein.</p>
 
+<h1 id="molecular-dynamics-simulations">Molecular Dynamics Simulations</h1>
+<p>Next, I performed molecular dynamics (MD) simulations on several of these generated structures. These simulations provide many structural snapshots of the protein, which I then used to predict aggregate structural properties. Each of these simulations was carried out for 25 million steps, and a snapshot of the system is saved every 10 thousand steps. Once they completed, I collected the saved snapshots and analyzed them in Python using the <code class="language-plaintext highlighter-rouge">MDAnalysis</code> package.</p>
+
+<h1 id="results">Results</h1>
+<p>The dihedral angles on the chromophore are important structural features that influence the photochemistry of the protein. The chromophore is the molecular fragment that is responsible for the protein’s fluorescence, and a model of it is shown below.</p>
+
+<p><img class="img-responsive mx-auto d-block" style="width: 50%;" src="/assets/img/REX-GECO-dihedral-diagram.svg" alt="REX-GECO dihedral diagram" data-zoomable="" /></p>
+
+<p>I measured the distribution of the \(\alpha\) and \(\beta\) dihedral angles shown in the figure, which measure the rotation of the chromophore. After aggregating the measurements across all 10 simulations, I plotted the density estimate of the angle distribution.</p>
+
+<p><img class="img-responsive mx-auto d-block" style="width: 70%;" src="/assets/img/REX-GECO-dihedrals.svg" alt="REX-GECO dihedral angle distribution" /></p>
+
+<p>On average, \(\alpha\) is −5° when calcium is bound to the protein and 8° when it is not. Similarly, \(\beta\) is 1° and 3° for the same comparison. These distributions show that both the \(\alpha\) and \(\beta\) angles tend to be larger in magnitude when calcium is not bound to the protein. This suggests that the chromophore is more twisted when there is no calcium present. Combining this observation with experimental results, a hypothesis for why the two protein forms differ in their photochemistry emerged: the more twisted state is partly responsible for the large color change between the two protein forms.</p>
+
+<p>My senior thesis provides a more detailed exposition of the project, although the focus and analysis of the project has evolved since it was published.</p>
+<div class="center-block text-center">
+  <a class="btn btn-sm" role="button" href="/assets/pdf/Senior-Thesis.pdf">Senior Thesis</a>
 </div>
 
+  </article>
+
+</div>
   </div>
 
   <!-- Footer -->
